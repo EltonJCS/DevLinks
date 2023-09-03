@@ -7,15 +7,14 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100%;
   background: radial-gradient(
-      circle,
-      rgba(86, 0, 91, 1) 0%,
-      rgba(21, 21, 21, 1) 75%
-    )
-    no-repeat;
+    circle,
+    rgba(86, 0, 91, 1) 0%,
+    rgba(21, 21, 21, 1) 75%
+  );
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #particles-js {
@@ -29,8 +28,27 @@ body {
 }
 
 #container {
-  width: 22.5rem;
-  margin: 3.5rem auto;
+  max-width: 26.5rem;
+  margin: 2rem auto;
+  background-color: rgba(21, 21, 21, 0.1);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 2.5rem 1rem rgba(86, 0, 91, 0.5);
+  transition: box-shadow 10s;
+  animation: 10s infinite alternate glow;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 2.5rem 1rem rgba(86, 0, 91, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 2.5rem 1rem rgba(150, 21, 21, 0.2);
+  }
+  to {
+    box-shadow: 0 0 2.5rem 1rem rgba(21, 21, 21, 0.5);
+  }
 }
 
 #profile {
@@ -73,7 +91,7 @@ ul li a {
   justify-content: center;
   align-items: center;
 
-  transition: background 0.5s;
+  transition: all 0.5s;
 }
 ul li a:hover {
   border: 0.0625rem solid rgba(86, 0, 91, 1);
@@ -82,4 +100,68 @@ ul li a:hover {
 }
 ul li a:active {
   box-shadow: 0 0 1rem #56005b inset;
+}
+
+ul li img {
+  width: 1.5rem;
+  position: absolute;
+  left: 25%;
+}
+
+#social-links {
+  padding: 1.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#social-links a {
+  border-radius: 50%;
+  border: 0.0625rem solid transparent;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.5s;
+}
+#social-links a:hover {
+  background-color: rgba(21, 21, 21, 0.5);
+  border: 0.0625rem solid rgba(86, 0, 91, 1);
+  box-shadow: 0 0 0.5rem #56005b inset;
+}
+#social-links a:active {
+  background-color: transparent;
+}
+
+#social-links img {
+  width: 1.5rem;
+}
+#social-links img:hover {
+  filter: drop-shadow(0 0 0.5rem #151515);
+}
+#social-links img:active {
+  filter: invert();
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(21, 21, 21, 0.2);
+  padding: 0.5rem 0;
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+footer a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer a:hover {
+  color: #56005b;
 }
