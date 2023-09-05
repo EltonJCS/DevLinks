@@ -12,7 +12,6 @@
   --secondary-color: #56005b;
   --secondary-color-50: rgba(86, 0, 91, 0.5);
   --text-color: #fff;
-  --profile-img-url: url(./assets/avatar-dark.png);
   --switch-bg-url: url(./assets/icons/theme-dark-moon.svg);
 }
 
@@ -22,12 +21,7 @@
   --secondary-color: #b8caff;
   --secondary-color-50: rgba(125, 203, 255, 0.5);
   --text-color: #101422;
-  --profile-img-url: url(./assets/avatar-light.png);
   --switch-bg-url: url(./assets/icons/theme-light-sun.svg);
-
-  #profile > img {
-    content: var(--profile-img-url);
-  }
 }
 
 body {
