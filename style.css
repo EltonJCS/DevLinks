@@ -61,6 +61,7 @@ body {
   border-radius: 50%;
   border: 0.125rem solid #56005b;
   box-shadow: 0 0 2.5rem 1rem #151515;
+  animation: 5s infinite alternate glow;
 }
 
 #profile p {
