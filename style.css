@@ -12,6 +12,22 @@
   --secondary-color: #56005b;
   --secondary-color-50: rgba(86, 0, 91, 0.5);
   --text-color: #fff;
+  --profile-img-url: url(./assets/avatar-dark.png);
+  --switch-bg-url: url(./assets/icons/theme-dark-moon.svg);
+}
+
+.light-theme {
+  --primary-color: #eaeaea;
+  --primary-color-50: rgba(234, 234, 234, 0.5);
+  --secondary-color: #b8caff;
+  --secondary-color-50: rgba(125, 203, 255, 0.5);
+  --text-color: #101422;
+  --profile-img-url: url(./assets/avatar-light.png);
+  --switch-bg-url: url(./assets/icons/theme-light-sun.svg);
+
+  #profile > img {
+    content: var(--profile-img-url);
+  }
 }
 
 body {
@@ -46,18 +62,6 @@ body {
   animation: 10s infinite alternate glow;
 }
 
-@keyframes glow {
-  from {
-    box-shadow: 0 0 2.5rem 1rem var(--secondary-color-50);
-  }
-  50% {
-    box-shadow: 0 0 2.5rem 1rem rgba(150, 21, 21, 0.2);
-  }
-  to {
-    box-shadow: 0 0 2.5rem 1rem var(--primary-color-50);
-  }
-}
-
 #profile {
   text-align: center;
   padding: 1.5rem;
@@ -75,7 +79,51 @@ body {
   font-weight: 500;
   line-height: 1.5rem;
   margin-top: 0.5rem;
-  text-shadow: 0 0 0.5rem #fff;
+  text-shadow: 0 0 0.5rem var(--text-color);
+}
+
+#switch {
+  width: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#switch button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background: #fff var(--switch-bg-url) no-repeat center;
+  background-size: 60%;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+#switch button:hover {
+  box-shadow: 0 0 1rem var(--text-color);
+}
+#switch button:active {
+  box-shadow: 0 0 1rem var(--text-color) inset;
+}
+
+.light-theme #switch button {
+  left: initial;
+  right: 0;
+}
+
+#switch span {
+  display: block;
+  width: 4rem;
+  height: 1.5rem;
+  background: var(--primary-color-50);
+  border: 1px solid var(--secondary-color);
+  border-radius: 2rem;
+  backdrop-filter: blur(4px);
 }
 
 ul {
@@ -172,4 +220,16 @@ footer a {
 }
 footer a:hover {
   color: var(--secondary-color);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 2.5rem 1rem var(--secondary-color-50);
+  }
+  50% {
+    box-shadow: 0 0 2.5rem 1rem rgba(150, 21, 21, 0.2);
+  }
+  to {
+    box-shadow: 0 0 2.5rem 1rem var(--primary-color-50);
+  }
 }
