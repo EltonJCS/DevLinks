@@ -5,8 +5,8 @@ function toggleTheme() {
   body.classList.toggle("light-theme");
 
   if (body.classList.contains("light-theme")) {
-    profileImage.setAttribute("src", "../assets/avatar-light.png");
+    profileImage.setAttribute("src", "./assets/avatar-light.png");
   } else {
-    profileImage.setAttribute("src", "../assets/avatar.png");
+    profileImage.setAttribute("src", "./assets/avatar.png");
   }
 }
