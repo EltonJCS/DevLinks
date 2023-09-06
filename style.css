@@ -24,6 +24,11 @@
   --switch-bg-url: url(./assets/icons/theme-light-sun.svg);
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
 body {
   height: 100dvh;
   display: grid;
