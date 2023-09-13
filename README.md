@@ -9,8 +9,15 @@
 </div>
   
 ## Sobre
-Este é um projeto de agregador de links que permite que você compartilhe facilmente suas redes sociais, sites e outros links importantes em um único lugar.
+Este é um site agregador de links que permite o compartilhamento eficiente de redes sociais, sites e outros links importantes em um único lugar.
 ## Tecnologias utilizadas
-O projeto foi desenvolvido utilizando somente HTML, CSS e JavaScript. Além disso, ele incorpora a biblioteca Particle.js que permite a criação de partículas ou formas para um fundo animado e interativo.
+O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Além disso, ele incorpora a biblioteca Particles.js que permite a criação de partículas ou formas para um fundo animado e interativo.
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li><a href="https://github.com/VincentGarreau/particles.js/">Particles.js</a></li>
+</ul>
 
 <p align="center">Made with ☕ by <a href="https://github.com/eltonjcs">EltonJCS</a></p>
