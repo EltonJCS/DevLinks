@@ -223,9 +223,25 @@ footer a:hover {
   color: var(--secondary-color);
 }
 
-@media (max-width: 360px) {
+body.light-theme {
+  #cv_icon {
+    filter: invert();
+    transition: all 0.5s;
+  }
+
+  #github_icon {
+    filter: invert();
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 420px) {
   #container {
-    padding: 1rem 0.5rem;
+    padding: 0rem 0.5rem;
+  }
+
+  #profile p {
+    margin-top: 0.5rem;
   }
 }
 
