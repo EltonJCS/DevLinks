@@ -17,7 +17,7 @@
 <h2>Tecnologias utilizadas | <i>Technologies Used</i></h2>
 <p>O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Além disso, ele incorpora a biblioteca Particles.js que permite a criação de partículas ou formas para um fundo animado e interativo.</p>
 <p><i>The project was developed using HTML, CSS and JavaScript. It also incorporates the Particles.js library that allows you to create particles or shapes for an animated and interactive background.</i></p>
-<p>Feito com | <i>Made with:</i></p>
+<h3>Feito com | <i>Made with:</i></h3>
 <ul>
   <li><b>HTML</b></li>
   <li><b>CSS</b></li>
